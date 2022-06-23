@@ -568,7 +568,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    1: THIRD_PERSON_CONTROLLER;ULTIMATE_CHARACTER_CONTROLLER_SHOOTER;ULTIMATE_CHARACTER_CONTROLLER_MELEE
+    1: THIRD_PERSON_CONTROLLER;ULTIMATE_CHARACTER_CONTROLLER_SHOOTER;ULTIMATE_CHARACTER_CONTROLLER_MELEE;JUPITER
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
