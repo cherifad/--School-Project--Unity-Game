@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Triggered : MonoBehaviour
 {
+    
 
     public float speed;
     public Transform door;
@@ -15,35 +16,36 @@ public class Triggered : MonoBehaviour
 
     void Start()
     {
-
+        
     }
     // Start is called before the first frame update
     void Update()
     {
 
-        if (oppening == true)
-        {
-            OpenDoor();
-        }
-        if (closing == true)
-        {
-            CloseDoor();
-        }
+            if (oppening == true)
+            {
+                OpenDoor();
+            }
+            if (closing == true)
+            {
+                CloseDoor();
+            }
+        
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.name == "Player")
-        {
-            oppening = true;
-        }
+
+        oppening = true;
+        Debug.Log("yayayayyaa");
+       
     }
 
     void OnTriggerExit(Collider other)
     {
 
-        if (other.transform.name == "Player")
+        if (other.transform.name == "Player1")
         {
             oppening = false;
             closing = true;
