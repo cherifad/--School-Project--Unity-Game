@@ -14,6 +14,13 @@ public class Inventory : MonoBehaviour
         GiveItem(2);
         GiveItem("Clef");
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+        }
+    }
     public void GiveItem(int id)
     {
         Item itemToAdd = itemDatabase.GetItem(id);
