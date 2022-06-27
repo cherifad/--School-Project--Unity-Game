@@ -21,8 +21,8 @@ public class ItemDataBase : MonoBehaviour
     {
         items = new List<Item>()
         {
-            new Item(0,"Clef","La cle qui permet d'ouvrir une certaines porte"),
-            new Item(2,"ore diamond","Diamant")
+            new Item(0,"Clef","La cle qui permet d'ouvrir une certaine porte"),
+            new Item(1,"Pomme","Ce fruit permet de regagner de la vie"),
         };
     }
 }

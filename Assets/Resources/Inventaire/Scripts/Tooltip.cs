@@ -13,7 +13,7 @@ public class Tooltip : MonoBehaviour
     }
     public void GenerateTooltip(Item item)
     {
-        string tooltip = string.Format("<b>{0}</b>\n<b>{1}</b>", item.title,item.description);
+        string tooltip = string.Format("<b>{0}</b>\n{1}", item.title,item.description);
         gameObject.SetActive(true);
     }
 }
