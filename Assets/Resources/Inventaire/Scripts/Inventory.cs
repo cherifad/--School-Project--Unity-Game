@@ -13,7 +13,6 @@ public class Inventory : MonoBehaviour
         GiveItem(0);
         GiveItem(2);
         GiveItem("Clef");
-        RemoveItem(2);
     }
     public void GiveItem(int id)
     {
