@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Save : MonoBehaviour
 {
+    public GameObject player;
+    private static Vector3 playerPos;
+
+    public static Vector3 PlayerPos { get => playerPos; set => playerPos = value; }
+
     void Start()
     {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
-        if (objs.Length > 1)
-        {
-            //Destroy(this.gameObject);
-        }
-
-        DontDestroyOnLoad(this.gameObject);
+    private void Update()
+    {
+        PlayerPos = player.transform.position;
     }
 }
