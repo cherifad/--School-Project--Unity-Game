@@ -23,6 +23,7 @@ public class RestoreSave : MonoBehaviour
         
         if(PersoClé.Save)
         {
+            PersoClé.ispass = true;
             if (reader != null)
             {
                 if (reader.Exists("Vie") || reader.Exists("Items") || reader.Exists("Positiion") || reader.Exists("Key"))

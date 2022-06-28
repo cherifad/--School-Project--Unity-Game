@@ -11,6 +11,7 @@ TagManager:
   - "Text-cl\xE9"
   - lava
   - Death
+  - respawn-lava
   layers:
   - Default
   - TransparentFX
