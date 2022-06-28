@@ -567,7 +567,8 @@ MonoBehaviour:
   m_Text: "<b>Fin</b>\n\n<b>Cr\xE9ateurs</b>\n\nLe Beau Gosse de la team  Ahmed OMEROVIC\nLe
     sorcier de la team  Adlen CHERIF\nLe petit de la team  Jeremy PELLISSIER\nL'artiste
     de la team  Irwin LADRETTE\nLe ma\xE7on de la team  Aur\xE9lien DE GABA\xCF\n\n<b>Remerciment</b>\n\nA
-    Mounir MADMAR pour sa voix dans le r\xF4le de Famasito\n\n<b>Musique</b>"
+    Mounir MADMAR pour sa voix dans le r\xF4le de Famasito\n\n<b>D\xE9dicace</b>\n\nA
+    C\xE9lian CHAUSSON\n\n"
 --- !u!222 &1204818307
 CanvasRenderer:
   m_ObjectHideFlags: 0
