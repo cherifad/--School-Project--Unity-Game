@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Irwin/LavaReveal.unity
     guid: 093c376616da6174783d5b69f915a8c2
+  - enabled: 1
+    path: Assets/Scenes/Fin/FinJeu.unity
+    guid: 293a2e6e527db714887519b0962edf1e
   m_configObjects: {}
