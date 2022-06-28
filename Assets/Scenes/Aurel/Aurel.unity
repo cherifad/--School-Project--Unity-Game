@@ -226,7 +226,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199693801}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 030037c7f181647488f269f2490d7486, type: 3}
   m_Name: 
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199693801}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6696137b9a781c4ab59158926ed71cb, type: 3}
   m_Name: 
@@ -406,6 +406,18 @@ MonoBehaviour:
   EditorWalkOnWalls: 0
   EditorSlideOnSlopes: 1
   EditorRespondToColliders: 0
+--- !u!114 &199693804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199693801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35ebdb72f3ce4a428e99426144851ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &199693805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1260567ad69024843ad3dfe296e4c947,
@@ -868,11 +880,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221f238b1b327e0449d858495adf1a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 199693805}
-  chaseRange: 10
-  attackRange: 2.2
+  Player: {fileID: 0}
+  RayonAction: 8
+  RayonAttaque: 0.5
   attackRepeatTime: 1
-  TheDammage: 0
+  degats: 10
   enemyHealth: 0
   loots: []
 --- !u!195 &1020003072

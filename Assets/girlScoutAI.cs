@@ -4,34 +4,21 @@ using UnityEngine;
 
 public class girlScoutAI : MonoBehaviour
 {
-    // Distance entre le joueur et l'ennemi
-    private float Distance;
+    private Vector3 PointDepart;
+    private float DistancePointDepart;
 
-    // Distance entre l'ennemi et sa position de base
-    private float DistanceBase;
-    private Vector3 basePositions;
+    public Transform Player;//position du joueur
+    private float Distance;//distance zombie/joueur
 
-    // Cible de l'ennemi
-    public Transform Target;
-
-    //Distance de poursuite
-    public float chaseRange = 10;
-
-    // Portée des attaques
-    public float attackRange = 2.2f;
+    public float RayonAction = 8;
+    public float RayonAttaque = 0.5f;
 
     // Cooldown des attaques
     public float attackRepeatTime = 1;
     private float attackTime;
+    public float degats = 10;
 
-    // Montant des dégâts infligés
-    public float TheDammage;
-
-    // Agent de navigation
     private UnityEngine.AI.NavMeshAgent agent;
-
-    // Animations de l'ennemi
-    private Animation animations;
     private Animator playerAnimator;
 
     // Vie de l'ennemi
@@ -44,10 +31,9 @@ public class girlScoutAI : MonoBehaviour
     void Start()
     {
         agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
-        animations = gameObject.GetComponent<Animation>();
         playerAnimator = GetComponent<Animator>();
         attackTime = Time.time;
-        basePositions = transform.position;
+        PointDepart = transform.position;
     }
 
     void Update()
@@ -57,41 +43,37 @@ public class girlScoutAI : MonoBehaviour
         {
             Debug.Log("!isdead");
 
-            // On cherche le joueur en permanence
-            Target = GameObject.Find("Principal").transform;
+            Player = GameObject.Find("Principal").transform;//localisation du personnage
+            Distance = Vector3.Distance(Player.position, transform.position);//distance entre zombie et personnage
+            DistancePointDepart = Vector3.Distance(PointDepart, transform.position);//distance entre le zombie et son point de départ
 
-            // On calcule la distance entre le joueur et l'ennemi, en fonction de cette distance on effectue diverses actions
-            Distance = Vector3.Distance(Target.position, transform.position);
-
-            // On calcule la distance entre l'ennemi et sa position de base
-            DistanceBase = Vector3.Distance(basePositions, transform.position);
-
-            // Quand l'ennemi est loin = idle
-            if (Distance > chaseRange && DistanceBase <= 1)
+            /*if (Distance > RayonAction && DistancePointDepart <= 1)//comportement de base du zombie
             {
-                idle();
-            }
-
-            // Quand l'ennemi est proche mais pas assez pour attaquer
-            if (Distance < chaseRange && Distance > attackRange)
-            {
-                //chase();
-                agent.destination = Target.position;
-                playerAnimator.SetBool("isChasing", true);
+                playerAnimator.SetBool("pointDepart", true);
             }
             else
-                playerAnimator.SetBool("isChasing", false);
+                playerAnimator.SetBool("pointDepart", false);*/
 
-            // Quand l'ennemi est assez proche pour attaquer
-            /*if (Distance < attackRange)
+            if (Distance < RayonAction && Distance > RayonAttaque)//Perso dans la zone de détection du zombie
             {
-                attack();
-            }*/
+                agent.destination = Player.position;
+                playerAnimator.SetBool("poursuite", true);
+            }
+            else
+                playerAnimator.SetBool("poursuite", false);
 
-            // Quand le joueur s'est échappé
-            if (Distance > chaseRange && DistanceBase > 1)
+            if (Distance < RayonAttaque)//le zombie est est dans le rayon d'attaque
             {
-                BackBase();
+                agent.destination = transform.position;//pour que le zombie resten en place
+
+                playerAnimator.SetBool("attaquer", true);
+            }
+            else
+                playerAnimator.SetBool("attaquer", false);
+
+            if (Distance > RayonAction && DistancePointDepart > 1)//on s'est trop éloigné du zombie
+            {
+                agent.destination = PointDepart;
                 playerAnimator.SetBool("goBack", true);
             }
             else
@@ -99,68 +81,20 @@ public class girlScoutAI : MonoBehaviour
 
         }
     }
-
-    // poursuite
-/*    void chase()
-    {
-        //playerAnimator.SetBool("isChasing", true);
-        agent.destination = Target.position;
-    }*/
+}
 
     // Combat
-    /*void attack()
-    {
-        // empeche l'ennemi de traverser le joueur
-        agent.destination = transform.position;
+/*void attack()
+{
+    // empeche l'ennemi de traverser le joueur
+    agent.destination = transform.position;
 
-        //Si pas de cooldown
-        if (Time.time > attackTime)
-        {
-            animations.Play("hit");
-            Target.GetComponent<PlayerInventory>().ApplyDamage(TheDammage);
-            Debug.Log("L'ennemi a envoyé " + TheDammage + " points de dégâts");
-            attackTime = Time.time + attackRepeatTime;
-        }
-    }*/
-
-    // idle
-    void idle()
+    //Si pas de cooldown
+    if (Time.time > attackTime)
     {
-        animations.Play("Z_Idle");
+        animations.Play("hit");
+        Player.GetComponent<PlayerInventory>().ApplyDamage(TheDammage);
+        Debug.Log("L'ennemi a envoyé " + TheDammage + " points de dégâts");
+        attackTime = Time.time + attackRepeatTime;
     }
-
-    /*public void ApplyDammage(float TheDammage)
-    {
-        if (!isDead)
-        {
-            enemyHealth = enemyHealth - TheDammage;
-            print(gameObject.name + "a subit " + TheDammage + " points de dégâts.");
-
-            if (enemyHealth <= 0)
-            {
-                Dead();
-            }
-        }
-    }*/
-
-    // Retour a la base si le joueur s'est échappé et si notre ennemi est trop loin de sa base
-    public void BackBase()
-    {
-        animations.Play("Z_Walk1_InPlace");
-        agent.destination = basePositions;
-    }
-
-    /*public void Dead()
-    {
-        gameObject.GetComponent<CapsuleCollider>().enabled = false;
-        isDead = true;
-        animations.Play("die");
-
-        // apparition du loot
-        int randomNumber = Random.Range(0, loots.Length);
-        GameObject finalLoot = loots[randomNumber];
-        Instantiate(finalLoot, transform.position, transform.rotation);
-
-        Destroy(transform.gameObject, 5);
-    }*/
-}
+}*/
