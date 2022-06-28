@@ -59,10 +59,11 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        tooltip.gameObject.SetActive(true);
+        
 
         if (this.item != null)
         {
+            tooltip.gameObject.SetActive(true);
             tooltip.GenerateTooltip(this.item);
         }
     }
