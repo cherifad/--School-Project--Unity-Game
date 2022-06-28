@@ -2313,6 +2313,7 @@ MeshFilter:
   m_GameObject: {fileID: 65218534}
   m_Mesh: {fileID: 4300002, guid: 098570362c7d344ad937e78a40f26937, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1 &65575326
 GameObject:
@@ -2492,6 +2493,8 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe30d80d1c0ae1c44b5b668c3eb5d5cf, type: 3}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 987b39e (lumières)
 =======
 >>>>>>> parent of 987b39e (lumières)
 --- !u!1 &72356388
