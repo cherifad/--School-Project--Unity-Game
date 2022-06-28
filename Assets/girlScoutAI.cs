@@ -11,12 +11,16 @@ public class girlScoutAI : MonoBehaviour
     private float Distance;//distance zombie/joueur
 
     public float RayonAction = 8;
-    public float RayonAttaque = 0.5f;
+    public float RayonAttaque = 0.8f;
 
     // Cooldown des attaques
     public float attackRepeatTime = 1;
     private float attackTime;
     public float degats = 10;
+    
+
+    //
+    public float coolDownAttaque;
 
     private UnityEngine.AI.NavMeshAgent agent;
     private Animator playerAnimator;
@@ -41,7 +45,7 @@ public class girlScoutAI : MonoBehaviour
 
         if (!isDead)
         {
-            Debug.Log("!isdead");
+            //Debug.Log("!isdead");
 
             Player = GameObject.Find("Principal").transform;//localisation du personnage
             Distance = Vector3.Distance(Player.position, transform.position);//distance entre zombie et personnage
@@ -65,6 +69,18 @@ public class girlScoutAI : MonoBehaviour
             if (Distance < RayonAttaque)//le zombie est est dans le rayon d'attaque
             {
                 agent.destination = transform.position;//pour que le zombie resten en place
+
+                if (coolDownAttaque > 0)
+                    coolDownAttaque -= Time.deltaTime;
+                if (coolDownAttaque < 0)
+                    coolDownAttaque = 0;
+                
+                if(coolDownAttaque == 0)
+                {
+                    //Debug.Log("Attaque");
+                    coolDownAttaque = 2;
+                }
+                //Debug.Log(coolDownAttaque);
 
                 playerAnimator.SetBool("attaquer", true);
             }

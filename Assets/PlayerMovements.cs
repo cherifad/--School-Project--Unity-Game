@@ -20,35 +20,17 @@ public class PlayerMovements : MonoBehaviour
     private float currentCamRotationX = 0f;
     private Rigidbody rb;
 
-    /*public Transform groundCheck;
-    public float groundDistance = 0.2f;
-    public LayerMask groundMask;
-
-    bool isGrounded;*/
-    Vector3 volocity;
-    CharacterController controler;
-    Animator playerAnimator;
-
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;//pour bloquer la souris
         rb = GetComponent<Rigidbody>();
-        controler = GetComponent<CharacterController>();
-        playerAnimator = GetComponent<Animator>();
     }
-
-    //si player au sol
-    /*bool Igrounded()
-    {
-        return Physics.CheckCapsule(playerCapsule.bounds.center, new Vector3(playerCapsule.bounds.center.x, playerCapsule.bounds.min.y - 0.1f, playerCapsule.bounds.center.z), 0.33572f);
-    }*/
 
     // Update is called once per frame
     void Update()
     {
         //déplacements du joueur
-        //isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         float xAxisMovement = Input.GetAxisRaw("Horizontal");//retourne une valeur entre -1(Q) et 1(D)
         float zAxisMovement = Input.GetAxisRaw("Vertical");//retourne une valeur entre -1(S) et 1(Z)
@@ -89,24 +71,5 @@ public class PlayerMovements : MonoBehaviour
             speed = 10;
         else
             speed = 4;
-
-
-        /*if (isGrounded)
-            Debug.Log("oui");
-        else
-            Debug.Log("non");
-        //sauter
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)//si on appuye sur space et que le perso est au sol
-        {
-            playerAnimator.SetBool("jump", true);
-            rb.velocity = jumpSpeed;
-            //Debug.Log("oui");     
-        }
-        else
-            playerAnimator.SetBool("jump", false);*/
-        /*if (controler.isGrounded)
-            Debug.Log("auSol");
-        else
-            Debug.Log("nonnnnn");*/
     }
 }
