@@ -12,7 +12,6 @@ public class Inventory : MonoBehaviour
     {
         GiveItem(0);
         GiveItem(1);
-        GiveItem("Clef");
     }
     private void Update()
     {
