@@ -28,6 +28,11 @@ public class Wait : MonoBehaviour
             yield return new WaitForSeconds(11.5f);
             SceneManager.LoadScene("intro");
         }
+        if (scene.name == "Final")
+        {
+            yield return new WaitForSeconds(34f);
+            SceneManager.LoadScene("FinJeu");
+        }
         else
         {
             if (scene.name == "LavaReveal")
