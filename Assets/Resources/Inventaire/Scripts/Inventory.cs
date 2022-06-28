@@ -10,14 +10,20 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        GiveItem(0);
+        GiveItem(1);
+        GiveItem(1);
         GiveItem(1);
     }
     private void Update()
     {
+        int bail = 1;
         if(Input.GetKeyDown(KeyCode.B))
         {
             inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            RemoveItem(bail);
         }
     }
     public void GiveItem(int id)
