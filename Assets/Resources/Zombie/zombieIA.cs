@@ -99,19 +99,3 @@ public class zombieIA : MonoBehaviour
         }
     }
 }
-
-// Combat
-/*void attack()
-{
-    // empeche l'ennemi de traverser le joueur
-    agent.destination = transform.position;
-
-    //Si pas de cooldown
-    if (Time.time > attackTime)
-    {
-        animations.Play("hit");
-        Player.GetComponent<PlayerInventory>().ApplyDamage(TheDammage);
-        Debug.Log("L'ennemi a envoyé " + TheDammage + " points de dégâts");
-        attackTime = Time.time + attackRepeatTime;
-    }
-}*/
