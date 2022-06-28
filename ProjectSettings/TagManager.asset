@@ -9,6 +9,8 @@ TagManager:
   - triggerlava
   - final
   - "Text-cl\xE9"
+  - lava
+  - Death
   layers:
   - Default
   - TransparentFX
