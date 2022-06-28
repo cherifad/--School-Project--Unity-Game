@@ -6,11 +6,11 @@ public class Save : MonoBehaviour
 {
     void Start()
     {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("player");
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
 
         if (objs.Length > 1)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
 
         DontDestroyOnLoad(this.gameObject);
