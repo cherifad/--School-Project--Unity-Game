@@ -17722,7 +17722,7 @@ MonoBehaviour:
   text: {fileID: 983310515}
   speed: 5
   door: {fileID: 1226515146}
-  maxOpenValue: 2000
+  maxOpenValue: 5000
   oppening: 0
   closing: 0
   currentValue: 0
@@ -36504,7 +36504,7 @@ MonoBehaviour:
   text: {fileID: 1694724393}
   speed: 5
   door: {fileID: 1403777180}
-  maxOpenValue: 2000
+  maxOpenValue: 5000
   oppening: 0
   closing: 0
   currentValue: 0
@@ -44717,7 +44717,7 @@ MonoBehaviour:
   text: {fileID: 305686093}
   speed: 5
   door: {fileID: 1603831831}
-  maxOpenValue: 2000
+  maxOpenValue: 5000
   oppening: 1
   closing: 1
   currentValue: 0
@@ -55926,7 +55926,7 @@ MonoBehaviour:
   text: {fileID: 1549496879}
   speed: 5
   door: {fileID: 1226515146}
-  maxOpenValue: 2000
+  maxOpenValue: 5000
   oppening: 0
   closing: 0
   currentValue: 0
