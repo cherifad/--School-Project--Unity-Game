@@ -38,14 +38,14 @@ public class Triggered : MonoBehaviour
     {
 
         oppening = true;
-        Debug.Log("yayayayyaa");
+        
        
     }
 
     void OnTriggerExit(Collider other)
     {
 
-        if (other.transform.name == "Player1")
+        if (other.transform.name == "Player")
         {
             oppening = false;
             closing = true;
@@ -64,6 +64,7 @@ public class Triggered : MonoBehaviour
         else
         {
             oppening = false;
+            //closing = true;
         }
 
     }
@@ -80,6 +81,7 @@ public class Triggered : MonoBehaviour
         else
         {
             closing = false;
+            //oppening = true;
         }
 
     }

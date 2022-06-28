@@ -14,45 +14,34 @@ public class Levier : MonoBehaviour
     public bool closing = false;
     public float currentValue = 0;
     public int aa = 0;
+   
 
    
     void OnTriggerEnter(Collider other)
     {
-        
-
-        if (other.gameObject.name == "Player")
-        {
-            
-
-
             if (aa == 1)
             {
                 oppening = true;
                 text.SetActive(true);
                 aa -= 1;
             }
-            
-        }
     }
     void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.name == "Player")
-        {
             if (aa == 0)
             {
                 closing = true;
                 text.SetActive(false);
             }
-        }
-
-            
-        
+   
     }
     // Start is called before the first frame update
     void Start()
     {
+        oppening = false;
         text.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -65,28 +54,31 @@ public class Levier : MonoBehaviour
             if (oppening == true)
             {
                 OpenDoor();
+               
             }
-            
-          
 
         }
+
+        
     }
 
 
     void OpenDoor()
     {
-        float movement = speed * Time.deltaTime * 500;
-        currentValue += movement;
+        
+            float movement = speed * Time.deltaTime * 500;
+            currentValue += movement;
 
-        if (currentValue <= maxOpenValue)
-        {
-            door.position = new Vector3(door.position.x, door.position.y - movement, door.position.z);
-        }
-        else
-        {
-            oppening = false;
-            closing = true;
-        }
+            if (currentValue <= maxOpenValue)
+            {
+                door.position = new Vector3(door.position.x, door.position.y - movement, door.position.z);
+            }
+            else
+            {
+                oppening = false;
+                closing = true;
+            }
+        
 
     }
 
