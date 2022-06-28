@@ -45,11 +45,10 @@ public class Triggered : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
 
-        if (other.transform.name == "Player")
-        {
+        
             oppening = false;
             closing = true;
-        }
+        
     }
 
     void OpenDoor()
