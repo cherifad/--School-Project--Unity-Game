@@ -8,6 +8,7 @@ TagManager:
   - key
   - triggerlava
   - final
+  - "Text-cl\xE9"
   layers:
   - Default
   - TransparentFX
