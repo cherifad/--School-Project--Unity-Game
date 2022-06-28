@@ -6,14 +6,11 @@ using UnityEngine.SceneManagement;
 public class Wait : MonoBehaviour
 {
     GameObject player;
-    Inventory inventory;
     void Start()
     {
-
         // Démarre la fonction Wait (coroutine)
         // Wait veut dire attendre
         StartCoroutine(Wait2());
-        player = GameObject.FindGameObjectWithTag("Player");
 
 
         // Exécution en parallèle
@@ -32,19 +29,7 @@ public class Wait : MonoBehaviour
 
         yield return new WaitForSeconds(temps);
 
-        Vector3 pos = Save.PlayerPos;
-
-        Debug.Log($"{pos}");
-
         SceneManager.LoadScene("SampleScene");
 
-        Debug.Log($"{player.transform.position}");
-
-        player.transform.position = pos;
-
-        inventory.GiveItem(0);
-
-
-        Debug.Log($"{player.transform.position}");
     }
 }

@@ -7,13 +7,16 @@ public class Inventory : MonoBehaviour
     public List<Item> characterItems = new List<Item>();
     public ItemDataBase itemDatabase;
     public UIInventory inventoryUI;
+    private static List<int> idItems;
+    private static bool trigger;
+
+    public static List<int> IdItems { get => idItems; set => idItems = value; }
+    public static bool Trigger { get => trigger; set => trigger = value; }
 
     private void Start()
     {
-        inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
-        GiveItem(1);
-        GiveItem(1);
-        GiveItem(1);
+        IdItems = new List<int>();
+        inventoryUI.gameObject.SetActive(false);
     }
     private void Update()
     {
@@ -30,12 +33,24 @@ public class Inventory : MonoBehaviour
                 HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() + 0.01f);
             }            
         }
+
+        if(Trigger)
+        {
+            foreach (int item in IdItems)
+            {
+                Debug.Log(item);
+                GiveItem(item);
+            }
+
+            Trigger = false;
+        }
     }
     public void GiveItem(int id)
     {
         Item itemToAdd = itemDatabase.GetItem(id);
         characterItems.Add(itemToAdd);
         inventoryUI.AddNewItem(itemToAdd);
+        IdItems.Add(id);
         Debug.Log("Added item: " + itemToAdd.title);
     }
     public void GiveItem(string itemName)

@@ -11,7 +11,7 @@ public class Save : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GetComponent<GameObject>();
     }
 
     private void Update()
