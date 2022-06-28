@@ -13,9 +13,17 @@ public class PersoClé : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("key"))
         {
-            key.SetActive(false);
+            Destroy(key);
             SceneManager.LoadScene("KeyGrabe");
-            
+
+        }
+        if (other.gameObject.tag.Equals("triggerlava"))
+        {
+            SceneManager.LoadScene("LavaReveal");
+        }
+        if (other.gameObject.tag.Equals("final"))
+        {
+            SceneManager.LoadScene("Final");
         }
 
     }

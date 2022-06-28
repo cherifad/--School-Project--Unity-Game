@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TourchSpot
   - key
+  - triggerlava
+  - final
   layers:
   - Default
   - TransparentFX
