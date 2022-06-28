@@ -10,6 +10,8 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     private Image spriteImage;
     private UIItem selectedItem;
     private Tooltip tooltip;
+    private Text tooltipText;
+
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         UpdateItem(null);
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+        tooltipText = GetComponentInChildren<Text>();
     }
     public void UpdateItem(Item item)
     {
@@ -56,7 +59,9 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(this.item != null)
+        tooltip.gameObject.SetActive(true);
+
+        if (this.item != null)
         {
             tooltip.GenerateTooltip(this.item);
         }
