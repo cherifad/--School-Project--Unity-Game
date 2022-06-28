@@ -7,12 +7,19 @@ public class RestoreSave : MonoBehaviour
 {
     public GameObject player;
     private GameObject key;
+    private static List<int> idItems;
+
+    public static List<int> IdItems { get => idItems; set => idItems = value; }
+
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log(Application.persistentDataPath);
         player = GameObject.FindGameObjectWithTag("Player");
         key = GameObject.FindGameObjectWithTag("key");
+        
+        IdItems = new List<int>();  
+
 
         var reader = QuickSaveReader.Create("Player");
 
@@ -40,7 +47,9 @@ public class RestoreSave : MonoBehaviour
 
                 Debug.Log($"Longueur = {items.Count}, 1er element : {items[0]}");
 
-                Inventory.IdItems = items;
+                IdItems = items;
+
+                Inventory.Trigger = true;
 
                 HealthBar.SetHealthBarValue(vie);
 
@@ -48,8 +57,6 @@ public class RestoreSave : MonoBehaviour
                     Destroy(key);
 
                 PersoClé.Save = false;
-
-                Inventory.Trigger = true;
             }
         }
         

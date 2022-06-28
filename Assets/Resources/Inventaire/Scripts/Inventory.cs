@@ -17,6 +17,22 @@ public class Inventory : MonoBehaviour
     {
         IdItems = new List<int>();
         inventoryUI.gameObject.SetActive(false);
+
+        
+
+        if (Trigger)
+        {
+            foreach (int item in RestoreSave.IdItems)
+            {
+                GiveItem(item);
+            }
+        } else
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                GiveItem(1);
+            }
+        }
     }
     private void Update()
     {
@@ -34,16 +50,7 @@ public class Inventory : MonoBehaviour
             }            
         }
 
-        if(Trigger)
-        {
-            foreach (int item in IdItems)
-            {
-                Debug.Log(item);
-                GiveItem(item);
-            }
-
-            Trigger = false;
-        }
+        
     }
     public void GiveItem(int id)
     {

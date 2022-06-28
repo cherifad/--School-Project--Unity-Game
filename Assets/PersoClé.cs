@@ -71,7 +71,8 @@ public class PersoClé : MonoBehaviour
 
         if (other.gameObject.tag.Equals("final"))
         {
-            SceneManager.LoadScene("Final");
+            if(Inventory.IdItems.Contains(0))
+                SceneManager.LoadScene("Final");
         }
 
     }
