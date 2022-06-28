@@ -13651,7 +13651,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1067412830}
-  inventory: {fileID: 2100558027}
 --- !u!4 &405921943
 Transform:
   m_ObjectHideFlags: 0
@@ -20735,17 +20734,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1260567ad69024843ad3dfe296e4c947,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.1
+      value: -55.41
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1260567ad69024843ad3dfe296e4c947,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.48
+      value: 3.53
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1260567ad69024843ad3dfe296e4c947,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.54
+      value: 40.2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1260567ad69024843ad3dfe296e4c947,
         type: 3}
@@ -33277,7 +33276,7 @@ MonoBehaviour:
       : "True", "ReactivationDelay" : "0", "ShowDebug" : "False", "Category" : "1",
       "Pack" : "Basic", "Tags" : "", "FormCondition" : "0", "RotateWithCamera" :
       "False", "RotationToCameraSpeed" : "360", "RotateWithInput" : "False", "RotateWithMovementInputX"
-      : "False", "RotationSpeed" : "120", "RotationSmoothing" : "0,1", "ForceViewOnInput"
+      : "False", "RotationSpeed" : "120", "RotationSmoothing" : "0", "ForceViewOnInput"
       : "False"}'
     - '{, "Type" : "com.ootii.Actors.AnimationControllers.Fall, ootii, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null", "Name" : "", "Form" : "-1", "Priority"
@@ -33459,6 +33458,37 @@ MonoBehaviour:
   EditorWalkOnWalls: 0
   EditorSlideOnSlopes: 0
   EditorRespondToColliders: 0
+--- !u!114 &1067412835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067412830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e369f84d2d8b4294badaaabb331472a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 1806225783}
+--- !u!143 &1067412836
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067412830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1070133639
 GameObject:
   m_ObjectHideFlags: 0
