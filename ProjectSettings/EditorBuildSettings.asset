@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Acceuil.unity
+    guid: 0afeafc317286414a8aabb79dbdec789
+  - enabled: 1
     path: Assets/Scenes/Labyrinth/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Irwin/KeyGrabe.unity
     guid: 4bea8720fcd971749b98cff3bbbb5ecc
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
