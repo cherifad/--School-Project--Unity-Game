@@ -11,11 +11,9 @@ public class Save : MonoBehaviour
 
     void Start()
     {
-        player = GetComponent<GameObject>();
     }
 
     private void Update()
     {
-        PlayerPos = player.transform.position;
     }
 }
