@@ -1,0 +1,271 @@
+[33mcommit 045073a096c46be7dced9dae23ffa3ce626b8437[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 18:20:39 2022 +0200
+
+    uuu
+
+[33mcommit de1c12a400e84a7fc9611517b221989049df43ad[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 18:17:59 2022 +0200
+
+    uuu
+
+[33mcommit c6dbd019d79549009542a3b994b2ed349baec344[m
+Author: AurelienDG <97517368+AurelienDG@users.noreply.github.com>
+Date:   Tue Jun 28 18:14:01 2022 +0200
+
+    jjj
+
+[33mcommit 59b4e73ca4b4df95b115a7aed63f2e13def67cbe[m
+Author: AurelienDG <97517368+AurelienDG@users.noreply.github.com>
+Date:   Tue Jun 28 18:13:00 2022 +0200
+
+    hh
+
+[33mcommit 4015fe88ec2d493a43d32f720e5c314ca659d7f7[m[33m ([m[1;31morigin/TOUTAct[m[33m)[m
+Merge: 2b8c497 daebfec
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 18:05:23 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 2b8c49727b30c80afc83d0fa20395ed17d692218[m
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 18:05:18 2022 +0200
+
+    things
+
+[33mcommit daebfec8db9f2c7b464da59e7cd7a7d210a002a9[m
+Merge: 987b39e cf43a09
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 18:04:52 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 987b39e0041867040eabd7f5ac45d4cba3871c75[m[33m ([m[1;32muuu[m[33m, [m[1;32msave[m[33m)[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 18:04:20 2022 +0200
+
+    lumières
+
+[33mcommit cf43a094d9d054e398a1172051d5634c1ff40c4e[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 17:48:57 2022 +0200
+
+    bail
+
+[33mcommit e14c7e188074785e42f14fe4aa743bd9b0772252[m
+Merge: 660fc85 da2cdb0
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 17:33:15 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 660fc85faed6e23128726dcaa5d078c589cbf93b[m
+Merge: 2d5af3b 09e3a6e
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 17:32:11 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit da2cdb0afc320328f646c8c390051fe7587ec435[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 17:21:51 2022 +0200
+
+    Bonne Acceuil
+
+[33mcommit 2d5af3b4c61f96c00b984cd487ed9b9b6c2e8f18[m[33m ([m[1;32mtest[m[33m)[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 17:21:12 2022 +0200
+
+    Barre de vie
+
+[33mcommit 09e3a6ea1b01afa539b088c9de7bef706e95d472[m
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 17:15:09 2022 +0200
+
+    cinématique de début
+
+[33mcommit fbb15e037aa5f01c75a0c211c3e1b27b5c6b8d14[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 17:12:59 2022 +0200
+
+    boutquitinv
+
+[33mcommit fee4821480ba5cb0fd0b7a0003fb3d2d1bb6915b[m
+Author: AurelienDG <97517368+AurelienDG@users.noreply.github.com>
+Date:   Tue Jun 28 16:50:57 2022 +0200
+
+    true movements
+
+[33mcommit a5e9f48ab81146cc335ce470d6cf47ade9c21046[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 16:46:32 2022 +0200
+
+    F
+
+[33mcommit fdbed1cc7a11b4df61937f9d286070eabc4d66f6[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 16:18:19 2022 +0200
+
+    BoutModiff
+
+[33mcommit b0e6621d37a7ae5f82a317941461d65026b77fa2[m
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 16:09:24 2022 +0200
+
+    oui
+
+[33mcommit b250788eec293409e1f71f1c3a8f58883e768d99[m
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 16:08:03 2022 +0200
+
+    plateformes
+
+[33mcommit 68eed99e6ae93f26a754f3251daf5b726ee43580[m
+Merge: 42e374a 2b8ac94
+Author: Jereeemy <Jeremy.Pellissier@etu.univ-savoie.fr>
+Date:   Tue Jun 28 16:02:21 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 42e374ab4d5387101319d18b2e5a6e26ce6e7d1c[m
+Author: Jereeemy <Jeremy.Pellissier@etu.univ-savoie.fr>
+Date:   Tue Jun 28 16:01:54 2022 +0200
+
+    bouton sortie enigme
+
+[33mcommit 2b8ac944114bc68a60f507141009087511da117d[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 15:58:25 2022 +0200
+
+    BoutQuitter
+
+[33mcommit e165e525cfb64af0a257adaf62dc03faa2246261[m
+Merge: c72d471 6386c42
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 15:53:51 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit c72d4710c694445c06da6cdbf06847a76971c87c[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 15:53:41 2022 +0200
+
+    modifs
+
+[33mcommit 6386c42d8c326e2e829b4d27a1ff33ae34663e9b[m
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 15:45:04 2022 +0200
+
+    plateforme
+
+[33mcommit 07a20dc554cc710d1370eaeb3ba6003d6ffec282[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 15:31:36 2022 +0200
+
+    Perso
+
+[33mcommit 1a4f61d32628815eaf61641fa9d40183b2e5c8ad[m
+Merge: 18c768c b218bd2
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 15:25:47 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 18c768cf34311d97b6e6ad8fcb816669ce4904f5[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 15:25:29 2022 +0200
+
+    sauvegarde
+
+[33mcommit b218bd260c7adbcf8d7ada6b1d43b3ca07a9c5b2[m[33m ([m[1;31morigin/Sauvegarde[m[33m)[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 15:22:41 2022 +0200
+
+    Irwin
+
+[33mcommit b1dc4419aea25aaa207fe2ce2c4c32f74272f565[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 15:13:40 2022 +0200
+
+    Erwin
+
+[33mcommit c013951054d7aff893a925479f1d159a0dee8c42[m
+Author: IrwinTaken <irwin.ladrette@etu.univ-smb.fr>
+Date:   Tue Jun 28 14:50:41 2022 +0200
+
+    audios pharmacito
+
+[33mcommit 57e6018069b6d9ab388ab9e93519439262f414c4[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 14:46:22 2022 +0200
+
+    Sons
+
+[33mcommit 431bb9ca9e21a41f0ba851bfc659416cbd9c16ec[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 14:35:58 2022 +0200
+
+    lui
+
+[33mcommit 01a8a26d166a47a06ae7ff0f055d9ed0593bec3c[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 14:18:03 2022 +0200
+
+    Bon Acceuil
+
+[33mcommit 589f5e584f09bc4259fab56c58e83a2a4f278d78[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 13:05:06 2022 +0200
+
+    lab
+
+[33mcommit 164b7dc652132ab3cac87c23e2e47c71516e080e[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 13:01:04 2022 +0200
+
+    Acceuil
+
+[33mcommit 788575d80a0973c7c95cb53def14c81144931c73[m
+Merge: 7fcc235 6a463bc
+Author: Jereeemy <Jeremy.Pellissier@etu.univ-savoie.fr>
+Date:   Tue Jun 28 11:09:34 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 7fcc235f357deb93c6ac16d1a50b0dc7e7070fe9[m
+Author: Jereeemy <Jeremy.Pellissier@etu.univ-savoie.fr>
+Date:   Tue Jun 28 11:09:31 2022 +0200
+
+    key irwin
+
+[33mcommit 6a463bc0bd62796fd6335516afc3b7eff12f3658[m
+Merge: d85f74e 8d8f324
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 11:06:48 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit d85f74e354e11be3cc279e47ba2b35208433bb5f[m
+Author: Nelda74 <95074031+Nelda74@users.noreply.github.com>
+Date:   Tue Jun 28 11:05:46 2022 +0200
+
+    changements
+
+[33mcommit 8d8f32492a469a734af2197165950fea560f58f3[m
+Author: Jereeemy <Jeremy.Pellissier@etu.univ-savoie.fr>
+Date:   Tue Jun 28 11:05:04 2022 +0200
+
+    porte enigme
+
+[33mcommit c361085b91ac63431904dfa548979f709bcd3c39[m
+Merge: 5989646 040e44d
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 10:57:07 2022 +0200
+
+    Merge branch 'main' of https://github.com/Nelda74/Jeu-Unity
+
+[33mcommit 5989646c548bf896cf3ead86e7c9add019833b5b[m
+Author: Ahmed.O <omerovicahmed12@gmail.com>
+Date:   Tue Jun 28 10
