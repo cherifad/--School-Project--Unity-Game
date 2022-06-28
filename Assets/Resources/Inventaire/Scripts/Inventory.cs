@@ -24,7 +24,11 @@ public class Inventory : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.M))
         {
-            RemoveItem(bail);
+            if(Exist(bail))
+            {
+                RemoveItem(bail);
+                HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() + 0.01f);
+            }            
         }
     }
     public void GiveItem(int id)
@@ -40,6 +44,11 @@ public class Inventory : MonoBehaviour
         characterItems.Add(itemToAdd);
         inventoryUI.AddNewItem(itemToAdd);
         Debug.Log("Added item: " + itemToAdd.title);
+    }
+
+    public bool Exist(int id)
+    {
+        return characterItems.Find(item => item.id == id) != null;
     }
     public Item CheckForItem(int id)
     {

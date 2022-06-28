@@ -3812,7 +3812,7 @@ MonoBehaviour:
   _UseSimulatedInput: 0
   _CameraTransform: {fileID: 1391735093}
   _AutoFindCameraTransform: 1
-  _IsTimeSmoothingEnabled: 0
+  _IsTimeSmoothingEnabled: 1
   _MaxSpeed: 5.668
   _RotationSpeed: 360
   MotionLayers:
@@ -3826,9 +3826,9 @@ MonoBehaviour:
       : "0", "OverrideLayers" : "False", "ActionAlias" : "ActivateRotation", "IsEnabled"
       : "True", "ReactivationDelay" : "0", "ShowDebug" : "False", "Category" : "1",
       "Pack" : "Basic", "Tags" : "", "FormCondition" : "0", "RotateWithCamera" :
-      "False", "RotationToCameraSpeed" : "360", "RotateWithInput" : "False", "RotateWithMovementInputX"
-      : "False", "RotationSpeed" : "120", "RotationSmoothing" : "0", "ForceViewOnInput"
-      : "False"}'
+      "True", "RotationToCameraSpeed" : "360", "RotateWithInput" : "False", "RotateWithMovementInputX"
+      : "False", "RotationSpeed" : "120", "RotationSmoothing" : "2", "ForceViewOnInput"
+      : "True"}'
     - '{, "Type" : "com.ootii.Actors.AnimationControllers.Fall, ootii, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null", "Name" : "", "Form" : "-1", "Priority"
       : "20", "OverrideLayers" : "False", "ActionAlias" : "Jump", "IsEnabled" : "True",
@@ -3841,7 +3841,7 @@ MonoBehaviour:
     - '{, "Type" : "com.ootii.Actors.AnimationControllers.WalkRunStrafe_v2, ootii,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "Name" : "", "Form"
       : "-1", "Priority" : "7", "OverrideLayers" : "False", "ActionAlias" : "Run",
-      "IsEnabled" : "False", "ReactivationDelay" : "0", "ShowDebug" : "False", "Category"
+      "IsEnabled" : "True", "ReactivationDelay" : "0", "ShowDebug" : "False", "Category"
       : "2", "Pack" : "Basic", "Tags" : "", "FormCondition" : "0", "ActivationAlias"
       : "", "ActorStances" : "", "DefaultToRun" : "False", "WalkSpeed" : "0", "RunSpeed"
       : "0", "StartInMove" : "False", "StartInWalk" : "False", "StartInRun" : "False",
@@ -3865,7 +3865,7 @@ MonoBehaviour:
     - '{, "Type" : "com.ootii.Actors.AnimationControllers.WalkRunPivot_v2, ootii,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "Name" : "", "Form"
       : "-1", "Priority" : "5", "OverrideLayers" : "False", "ActionAlias" : "Run",
-      "IsEnabled" : "True", "ReactivationDelay" : "0", "ShowDebug" : "False", "Category"
+      "IsEnabled" : "False", "ReactivationDelay" : "0", "ShowDebug" : "False", "Category"
       : "2", "Pack" : "Basic", "Tags" : "", "FormCondition" : "0", "DefaultToRun"
       : "False", "WalkSpeed" : "0", "RunSpeed" : "0", "RotateWithCamera" : "True",
       "RotateActionAlias" : "ActivateRotation", "RotationSpeed" : "180", "StartInMove"
@@ -4037,6 +4037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29110bddab97bc9478c3acf93a4e41aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &121220900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12487,7 +12488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &383779775
 GameObject:
@@ -22765,7 +22766,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &751308712
 GameObject:
@@ -27327,7 +27328,7 @@ Transform:
   m_LocalScale: {x: 1.1986318, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &885878432
 GameObject:
@@ -31005,7 +31006,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c089f2312e8c34a4a9296a9b9dbce8fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.2
+      value: -47.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c089f2312e8c34a4a9296a9b9dbce8fd,
         type: 3}
@@ -31015,7 +31016,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c089f2312e8c34a4a9296a9b9dbce8fd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.17
+      value: 60.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c089f2312e8c34a4a9296a9b9dbce8fd,
         type: 3}
@@ -31265,7 +31266,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: c089f2312e8c34a4a9296a9b9dbce8fd,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: -790435773315590083, guid: c089f2312e8c34a4a9296a9b9dbce8fd,
         type: 3}
@@ -45569,7 +45570,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391735091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97998fab329806d4aa8ec976cd3ef268, type: 3}
   m_Name: 
@@ -56044,7 +56045,7 @@ RectTransform:
   - {fileID: 1335282971}
   - {fileID: 1004601538}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -59441,6 +59442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29110bddab97bc9478c3acf93a4e41aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 121220895}
 --- !u!1 &1806280220
 GameObject:
   m_ObjectHideFlags: 0
